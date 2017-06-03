@@ -1,0 +1,129 @@
+/* resets and general styles */
+
+*{
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::-moz-selection{
+	color: #FFFFFF;
+	background: #FF5722;
+}
+
+::selection{
+	color: #FFFFFF;
+	background: #FF5722;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font: normal 16px 'Roboto', sans-serif;
+	position: absolute; 
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background: rgba(71,49,181,1);
+	background: -moz-linear-gradient(top, rgba(71,49,181,1) 0%, rgba(142,85,200,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(71,49,181,1)), color-stop(100%, rgba(142,85,200,1)));
+	background: -webkit-linear-gradient(top, rgba(71,49,181,1) 0%, rgba(142,85,200,1) 100%);
+	background: -o-linear-gradient(top, rgba(71,49,181,1) 0%, rgba(142,85,200,1) 100%);
+	background: -ms-linear-gradient(top, rgba(71,49,181,1) 0%, rgba(142,85,200,1) 100%);
+	background: linear-gradient(to bottom, rgba(71,49,181,1) 0%, rgba(142,85,200,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4731b5', endColorstr='#8e55c8', GradientType=0 );
+}
+
+div.wrapper{
+	width: calc(3*240px);
+	margin: auto;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+span, a, strong{font-weight: 700;}
+a{transition: .2s; text-decoration: none; color: #787878; border-bottom: 1px solid #607D8B;}
+a:hover{transition: .2s; color: #FF5722;}
+
+/* page layout */
+
+/* section */
+
+section{
+	width: 100%;
+	height: 100%;
+}
+
+section h1, section p.meta{
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+section p.numbers{font-size: 6em;}
+section p.meta,section p.strings{font-size: 1.5em;}
+section h1{font-size: 4.5em;}
+
+/* countdown styles */
+
+div#countdown{color: #353535;}
+
+div#countdown p{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+p.numbers{
+	width: 100%;
+	height: 85%;
+	background: #FFFFFF;
+	margin-top: -25px;
+	padding-top: 20px;
+}
+
+p.strings{
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+	background: #4832b5;
+	color: #FFFFFF;
+}
+
+div.cd-box{
+	width: 225px;
+	background: #FFFFFF;
+	float: left;
+	padding: 25px 0 0 0;
+	margin: 30px 15px 0 0;
+	-webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+	-moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+	box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+}
+
+/* footer */
+
+footer{
+	position: relative;
+	top: 60px;
+}
+
+footer p{
+  color: #787878;
+}
+
+ /* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
+
+canvas#canvas{
+	position: absolute;
+	z-index: -1;
+}
